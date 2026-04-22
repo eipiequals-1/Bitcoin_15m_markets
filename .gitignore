@@ -1,5 +1,6 @@
 *.key
 *.zip
+*.pyc
 credentials.py
 display_kalshi_local.py
 display_kalshi.py
