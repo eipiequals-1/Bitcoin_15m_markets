@@ -6,16 +6,16 @@ Side-by-side analysis of BTC price prediction markets across Kalshi and Polymark
 
 | File | Description |
 |------|-------------|
-| `extract_kalshi.py` | Extracts fields from `kalshi_btc15m_all.json` → `kalshi_btc15m_extracted.json` |
-| `extract_polymarket.py` | Extracts fields from `polymarket_btc15m_all.json` → `polymarket_btc15m_extracted.json` |
-| `btc15m_comparison.py` | Tkinter GUI app to browse and compare Kalshi/Polymarket markets side-by-side |
-| `kalshi_btc15m_all.json` | Raw Kalshi market records |
-| `kalshi_btc15m_extracted.json` | Kalshi market records (id, start/end time, target price, expiry value, result, volume) |
-| `polymarket_btc15m_all.json` | Raw Polymarket market records |
-| `polymarket_series_10192.json` | Raw Polymarket series |
-| `polymarket_btc15m_extracted.json` | Polymarket market records (id, start/end time, target price, expiry value, result, volume) |
 | `KalshiData3.ipynb` | Used to get Kalshi market data |
 | `PolymarketData.ipynb` | Used to get Polymarket market data |
+| `btc15m_comparison.py` | Tkinter GUI app to browse and compare Kalshi/Polymarket markets side-by-side |
+| `kalshi_btc15m_all.json` | Raw Kalshi market records |
+| `polymarket_btc15m_all.json` | Raw Polymarket market records |
+| `polymarket_series_10192.json` | Raw Polymarket series |
+| `extract_kalshi.py` | Extracts fields from `kalshi_btc15m_all.json` → `kalshi_btc15m_extracted.json` |
+| `extract_polymarket.py` | Extracts fields from `polymarket_btc15m_all.json` → `polymarket_btc15m_extracted.json` |
+| `kalshi_btc15m_extracted.json` | Kalshi market records (id, start/end time, target price, expiry value, result, volume) |
+| `polymarket_btc15m_extracted.json` | Polymarket market records (id, start/end time, target price, expiry value, result, volume) |
 
 ## Data Pipeline
 
