@@ -1,8 +1,10 @@
 import json
 import ast
+from pathlib import Path
 
-INPUT_FILE  = "polymarket_btc15m_all.json"
-OUTPUT_FILE = "polymarket_btc15m_extracted.json"
+_DATA_DIR   = Path(__file__).parent.parent / "data"
+INPUT_FILE  = _DATA_DIR / "polymarket_btc15m_all.json"
+OUTPUT_FILE = _DATA_DIR / "polymarket_btc15m_extracted.json"
 
 
 def get_meta(market):

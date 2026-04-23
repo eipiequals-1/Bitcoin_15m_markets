@@ -1,7 +1,9 @@
 import json
+from pathlib import Path
 
-INPUT_FILE  = "kalshi_btc15m_all.json"
-OUTPUT_FILE = "kalshi_btc15m_extracted.json"
+_DATA_DIR   = Path(__file__).parent.parent / "data"
+INPUT_FILE  = _DATA_DIR / "kalshi_btc15m_all.json"
+OUTPUT_FILE = _DATA_DIR / "kalshi_btc15m_extracted.json"
 
 with open(INPUT_FILE) as f:
     markets = json.load(f)

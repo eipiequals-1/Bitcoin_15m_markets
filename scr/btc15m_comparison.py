@@ -7,13 +7,14 @@ from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 
 _HERE = Path(__file__).parent
+_DATA_DIR = _HERE.parent / "data"
 
 # ── Data Loading ───────────────────────────────────────────────────────────────
 
 def load_data():
-    with open(_HERE / "kalshi_btc15m_extracted.json") as f:
+    with open(_DATA_DIR / "kalshi_btc15m_extracted.json") as f:
         kalshi = json.load(f)
-    with open(_HERE / "polymarket_btc15m_extracted.json") as f:
+    with open(_DATA_DIR / "polymarket_btc15m_extracted.json") as f:
         polymarket = json.load(f)
     return kalshi, polymarket
 
